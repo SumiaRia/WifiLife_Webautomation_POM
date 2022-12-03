@@ -19,10 +19,10 @@ public class DriverSetUp {
         setDriver(webDriver);
     }
 
-//    @AfterMethod
-//    public static synchronized void quitDriver() {
-//        getDriver().quit();
-//    }
+    @AfterMethod
+    public static synchronized void quitDriver() {
+        getDriver().quit();
+    }
 
     public static WebDriver getDriver() {
         return driver.get();
